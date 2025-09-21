@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="logReg.css">
+
+</head>
+</head>
+
+<body>
+    <section>
+        <form name="myForm" method="post" action="register.php" onsubmit="return formValidation();">
+            <div class="form-box">
+                <div class="form-value">
+                    <h2>Register</h2>
+                    <div class="inputbox">
+                        <input type="text" name="username" required>
+                        <label>Name</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="selectbox">
+                        <select name="user_type" required>
+                            <option value="customer">Customer</option>
+                        </select>
+                    </div>
+                    <br><br><br>
+                    <button type="submit">Register</button>
+                    <div class="register">
+                        <p>Already have an account? <a href="login/login.php">Log In</a></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        </div>
+        </div>
+    </section>
+    <script>
+        function formValidation() {
+            return true;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Cineplex Special Offers</title>
+    <style>
+        #special-offers {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .offer {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .offer img {
+            max-width: 100%;
+        }
+        
+        .offer-details h3 {
+            color: #333;
+            margin-top: 10px;
+        }
+        
+        .offer-details p {
+            color: #666;
+        }
+        
+        .offer-details button {
+            background-color: #ff4500;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .modal-content span {
+            color: #555;
+            font-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/cineplex.png" alt="Cineplex Logo">
+            <h1>Cineplex</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="Booking/movieadd.html">Booking</a></li>
+                <li><a href="Movie/theaterinfo.html">Theater Info</a></li>
+                <li><a href="login/login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <form action="search.php" method="GET">
+                <input type="text" name="query" placeholder="Search movies...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+    </header>
+
+    <section id="special-offers">
+        <h2>Special Offers</h2>
+
+        <div class="offer">
+            <img src="./img/weekly.jpg" alt="Special Offer 1">
+            <div class="offer-details">
+                <h3>Weekend Bonanza</h3>
+                <p>🍿 Weekend Bonanza! Join us every weekend for discounted tickets and snacks. Elevate your movie experience without breaking the bank! 🎉 #WeekendBonanza #MovieDeals".</p>
+                <button onclick="showOfferDetails('Weekend Bonanza', 'Enjoy discounted tickets and snacks every weekend!')">Get Offer</button>
+            </div>
+        </div>
+
+        <div class="offer">
+            <img src="./img/family.jpg" alt="Special Offer 2">
+            <div class="offer-details">
+                <h3>Family Movie Night</h3>
+                <p>👨‍👩‍👧‍👦 Family Movie Night! Bring the whole crew for a memorable movie experience. Special family deals on tickets and concessions. Create lasting memories with Cineplex! 🍿🎥 #FamilyMovieNight #QualityTime".</p>
+                <button onclick="showOfferDetails('Family Movie Night', 'Treat your special someone to a perfect movie night with our Couple Packages! Enjoy exclusive deals on tickets and a delightful combo for two. Date night done right!')">Get Offer</button>
+            </div>
+        </div>
+        <div class="offer">
+            <img src="./img/couple.jpg" alt="Special Offer 2">
+            <div class="offer-details">
+                <h3>Couple Packages</h3>
+                <p>❤️ Treat your special someone to a perfect movie night with our Couple Packages! Enjoy exclusive deals on tickets and a delightful combo for two. Date night done right! 🎬🍷 #CouplePackages #DateNight".</p>
+                <button onclick="showOfferDetails('Couple Packages', 'Bring the whole family for a movie night and get special family combo deals on tickets and concessions.')">Get Offer</button>
+            </div>
+    </section>
+
+    <div id="offer-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideOfferDetails()">&times;</span>
+            <h2 id="offer-title"></h2>
+            <p id="offer-description"></p>
+        </div>
+    </div>
+
+    <script>
+        function showOfferDetails(title, description) {
+            document.getElementById('offer-title').textContent = title;
+            document.getElementById('offer-description').textContent = description;
+            document.getElementById('offer-details-modal').style.display = 'flex';
+        }
+
+        function hideOfferDetails() {
+            document.getElementById('offer-details-modal').style.display = 'none';
+        }
+
+        // Close the modal if the user clicks outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById('offer-details-modal');
+            if (event.target === modal) {
+                hideOfferDetails();
+            }
+        };
+    </script>
+
+</body>
+
+</html>

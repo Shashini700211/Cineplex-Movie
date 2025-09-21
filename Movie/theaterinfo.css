@@ -1,0 +1,242 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Search Bar styles */
+
+.search-bar {
+    display: flex;
+    align-items: end;
+}
+
+.search-bar form {
+    display: contents;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 150px;
+    /* Adjust width as needed */
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .search-bar input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.movie-listing {
+    background-color: #f9f9f9;
+    padding: 50px 300px;
+    position: relative;
+}
+
+.movie-listing1 {
+    background-color: #f9f9f9;
+    padding: 50px 200px;
+    position: relative;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.movie-card-content {
+    padding: 20px;
+}
+
+.movie-card h3 {
+    margin-top: 0;
+}
+
+.movie-card p {
+    margin-bottom: 0;
+}
+
+.movie-card a {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #ff4500;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.movie-card a:hover {
+    background-color: #e63e00;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e63e00;
+}
+
+.theater-info {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.theater-info h2 {
+    text-align: center;
+}
+
+.info-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+    text-decoration: none;
+}
+
+.footer .box-container .box h3 {
+    color: white;
+    font-size: 15px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+.footer .box-container .box a {
+    color: rgb(185, 185, 185);
+    font-size: 12px;
+    padding-bottom: 12px;
+    display: block;
+    text-decoration: none;
+}
+
+.footer .box-container .box i {
+    color: #0d6efd;
+    padding-right: 8px;
+    transition: .2s linear;
+    text-decoration: none;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 20px;
+    text-decoration: none;
+}

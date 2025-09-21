@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="logReg.css">
+</head>
+
+<body>
+    <section>
+        <form name="loginForm" method="post" action="customer.html" >
+            <div class="form-box">
+                <div class="form-value">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="selectbox">
+                        <select name="user_type" required>
+                            <option value="admin">Admin</option>
+                            <option value="staff">Movie Theater Staff</option>
+                            <option value="customer">Customer</option>
+                        </select>
+                    </div>
+                    <br><br><br>
+                    <button type="submit" name="submit" >Submit</button>
+                    <div class="register">
+                        <p>Don't have an account? <a href="Register.html">Register</a></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script>
+        function formValidation() {
+            return true;
+        }
+    </script>
+</body>
+
+</html>

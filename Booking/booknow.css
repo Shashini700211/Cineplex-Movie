@@ -1,0 +1,292 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: end;
+}
+
+.search-bar form {
+    display: contents;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 150px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color:black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-now {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-now h2 {
+    text-align: center;
+}
+
+.book-now form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.book-now label {
+    font-weight: bold;
+}
+
+.book-now select,
+.book-now input[type="date"],
+.book-now input[type="time"],
+.book-now input[type="number"],
+.book-now input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.book-now button {
+    grid-column: span 2;
+    padding: 15px;
+    background-color:black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: auto;
+}
+
+.book-now button:hover {
+    background-color:gray;
+}
+
+.container {
+    width: 520px;
+    margin: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: -130px;
+}
+
+.container1 {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #333;
+    text-align: center;
+}
+
+.seats-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.booking-table th,
+.booking-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.booking-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.booking-table td {
+    background-color: #f5f5f5;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background-color: lightslategray;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+a {
+    color: lightseagreen;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+a:hover {
+    color: #1e6ac1;
+}
+
+section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+script {
+    display: none;
+}
+
+.confirmation-message {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.confirmation-message p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.confirmation-message a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.confirmation-message a:hover {
+    color: #1e6ac1;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e63e00;
+}
+
+.header-menu-tab {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.header-menu-tab:hover {
+    border-color: #3498db;
+    background-color: #f4f4f4;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.scnd-font-color {
+    color: #666;
+}

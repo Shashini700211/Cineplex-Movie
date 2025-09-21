@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cineplex</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        .search-bar form {
+            display: contents;
+        }
+        
+        .search-bar {
+            display: flex;
+            align-items: end;
+        }
+        
+        .search-bar input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 5px;
+            width: 150px;
+        }
+        
+        .search-bar button {
+            padding: 8px 15px;
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Responsive styles */
+        
+        @media screen and (max-width: 768px) {
+            .search-bar {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            .search-bar input[type="text"] {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+        
+        .contact-us-section {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-us-section h1 {
+            color: #333;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-us-section h1 img {
+            margin-right: 10px;
+        }
+        
+        .contact-us-section p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        form {
+            display: grid;
+            gap: 20px;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        input,
+        textarea {
+            width: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: #ff4500;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #e63e00;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .footer .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            gap: 3rem;
+            text-decoration: none;
+        }
+        
+        .footer .box-container .box h3 {
+            color: white;
+            font-size: 15px;
+            padding-bottom: 20px;
+            text-decoration: none;
+            text-decoration: none;
+        }
+        
+        .footer .box-container .box a {
+            color: rgb(185, 185, 185);
+            font-size: 12px;
+            padding-bottom: 12px;
+            display: block;
+            text-decoration: none;
+        }
+        
+        .footer .box-container .box i {
+            color: #0d6efd;
+            padding-right: 8px;
+            transition: .2s linear;
+            text-decoration: none;
+        }
+        
+        .footer .box-container .box a:hover i {
+            padding-right: 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/cineplex.png" alt="Cineplex Logo">
+            <h1>Cineplex</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="Booking/movieadd.html">Booking</a></li>
+                <li><a href="Movie/theaterinfo.html">Theater Info</a></li>
+                <li><a href="login/login.html">login</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="search.php" method="GET">
+                <input type="text" name="query" placeholder="Search movies...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="contact-us-section"> <br>
+        <h1>Contact Cineplex Films & Theatres</h1>
+        <p>Visit us at our Kandy location or use the contact form below to get in touch with us. Should you wish to contact us for any matter you can reach us on the following address or contact numbers listed below.</p>
+
+        <p><strong>Email Support:</strong> <a href="mailto:contact@cineplexmovies.com">help@cineplexmovies.com</a></p>
+
+        <p>Email our support team for other queries regarding booking changes, refund details, bank issues.</p>
+
+        <p>If you wish to contact us via email please fill in the following form and we will get in touch with you at the earliest.</p>
+
+        <form action="process_contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+
+        <section class="footer">
+
+            <div class="box-container">
+                <div class="box">
+                    <br>
+                    <h3>Quik Links</h3>
+                    <a href="Home.php"> <i></i> Home</a>
+                    <a href="theaterinfo.php"><i></i> About us</a>
+                    <a href="ask.php"><i></i> Ask Question</a>
+                    <a href="theaterinfo.php"> <i></i> Privacy Policy</a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <h3>Contact Info</h3>
+                    <a href="#"> <i></i> +94766997850</a>
+                    <a href="#"> <i></i> +94766997850</a>
+                    <a href="#"> <i></i> cineplexmovies@gmail.com</a>
+                    <a href="#"> <i></i> Kandy, Sri Lanka</a>
+                    <a href="#"> <i></i> Monday to Sunday - 10:00 AM - 10:00 PM </a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <h3>Follow us</h3>
+                    <a href="#"> <i></i> Facebook</a>
+                    <a href="#"> <i></i> Twitter</a>
+                    <a href="#"> <i></i> Instagram</a>
+
+                </div>
+            </div>
+            <br> --------------------------------------------------------------------------------------------
+            <br> <br>
+            <p>&copy; 2024 Cineplex. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

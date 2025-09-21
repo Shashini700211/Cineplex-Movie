@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log.css">
+    <link rel="icon" type="images/x-icon" href="../images/cineplex.png">
+    <title>User Profile</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../images/cineplex.png" alt="Cineplex Logo">
+            <h1>Cineplex</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="./movie.php">Movies</a></li>
+                <li><a href="./Booking/Booking.html">Booking</a></li>
+                <li><a href="./theaterinfo.php">Theater Info</a></li>
+                <li><a href="../Contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="search.php" method="GET">
+                <input type="text" name="query" placeholder="Search movies...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <div class="container">
+        <div class="block">
+            <section class="header-menu horizontal-list">
+                <li>
+                    <a class="header-menu-tab" href="../Booking/bookdetails.php">
+                        <span class="icon fontawesome-envelope scnd-font-color"></span> View All Bookings
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu-tab" href="../Booking/bookdelete.php">
+                        <span class="icon fontawesome-envelope scnd-font-color"></span> Delete Bookings
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu-tab" href="../Booking/showmoies.php">
+                        <span class="icon fontawesome-envelope scnd-font-color"></span> Delete Movies
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu-tab" href="staffdata.php">
+                        <span class="icon fontawesome-envelope scnd-font-color"></span> Staff Data
+                    </a>
+                </li>
+            </section>
+        </div>
+        <section class="user-info">
+            <br><br>
+            <img src="user.png" alt="User Avatar">
+            <br>
+            <div class="user-text">
+                <h2>Profile Details</h2>
+                <ul>
+                    <li><strong>Username :</strong> Admin</li><br>
+                    <li><strong>Email :</strong> Admin01@gmail.com</li><br>
+                    <li><strong>First Name :</strong> Admin</li><br>
+                    <li><strong>Last Name :</strong> Admin</li><br>
+                    <li><strong>Country :</strong> Sri Lanka</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="change-password">
+            <h2>Change Password</h2>
+            <form action="change_password.php" method="POST">
+                <label for="old-password">Old Password:</label>
+                <input type="password" name="old-password" required>
+
+                <label for="new-password">New Password:</label>
+                <input type="password" name="new-password" required>
+
+                <label for="confirm-password">Confirm New Password:</label>
+                <input type="password" name="confirm-password" required>
+                <br>
+                <button type="submit">Change Password</button>
+            </form>
+        </section>
+
+        <section class="sign-out">
+            <a href="#" id="signOutButton">Sign Out</a>
+        </section>
+
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="scripts.js">
+    </script>
+
+</body>
+
+</html>
